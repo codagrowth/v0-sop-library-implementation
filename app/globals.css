@@ -1,0 +1,102 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* CodaGrowth Design System */
+  --bg: #05070D;
+  --bg-2: #0A0E1A;
+  --panel: #0E1422;
+  --panel-2: #121A2C;
+  --line: rgba(255,255,255,0.08);
+  --line-2: rgba(255,255,255,0.14);
+  --text: #EAF0FA;
+  --text-dim: #9AA6BF;
+  --text-mute: #667192;
+  --teal: #4FE9D0;
+  --teal-2: #22C9B1;
+  --teal-ink: #041612;
+  --purple: #9B6BFF;
+  --purple-2: #6A3DFF;
+  --purple-soft: rgba(155,107,255,0.18);
+  --teal-soft: rgba(79,233,208,0.18);
+  
+  /* Shadcn tokens mapped to CodaGrowth */
+  --background: var(--bg);
+  --foreground: var(--text);
+  --card: var(--panel);
+  --card-foreground: var(--text);
+  --popover: var(--panel);
+  --popover-foreground: var(--text);
+  --primary: var(--teal);
+  --primary-foreground: var(--teal-ink);
+  --secondary: var(--panel-2);
+  --secondary-foreground: var(--text);
+  --muted: var(--panel-2);
+  --muted-foreground: var(--text-mute);
+  --accent: var(--purple);
+  --accent-foreground: #fff;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: var(--line);
+  --input: var(--line-2);
+  --ring: var(--teal);
+  --radius: 0.875rem;
+}
+
+@theme inline {
+  --font-sans: 'Inter', 'Geist', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', 'Geist', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Geist Mono', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Custom CodaGrowth colors */
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-panel: var(--panel);
+  --color-panel-2: var(--panel-2);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-text: var(--text);
+  --color-text-dim: var(--text-dim);
+  --color-text-mute: var(--text-mute);
+  --color-teal: var(--teal);
+  --color-teal-2: var(--teal-2);
+  --color-teal-ink: var(--teal-ink);
+  --color-purple: var(--purple);
+  --color-purple-2: var(--purple-2);
+  --color-purple-soft: var(--purple-soft);
+  --color-teal-soft: var(--teal-soft);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
