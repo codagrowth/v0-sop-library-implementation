@@ -11,13 +11,13 @@ interface SOPCardProps {
 
 export function SOPCard({ letter, tool, title, audience, href }: SOPCardProps) {
   return (
-    <div className="group relative overflow-hidden rounded-xl border border-[rgba(0,209,193,0.15)] bg-[#1E3F62] p-7 transition-all duration-200 hover:-translate-y-0.5 hover:border-[rgba(0,209,193,0.4)] hover:shadow-[0_4px_24px_rgba(0,209,193,0.12)]">
+    <div className="group relative overflow-hidden rounded-xl border border-[rgba(245,115,74,0.15)] bg-[#1E3F62] p-7 transition-all duration-200 hover:-translate-y-0.5 hover:border-[rgba(245,115,74,0.4)] hover:shadow-[0_4px_24px_rgba(245,115,74,0.12)]">
       {/* Hover glow effect */}
-      <div className="pointer-events-none absolute -right-20 -top-20 h-40 w-40 rounded-full bg-[radial-gradient(circle,rgba(0,209,193,0.2),transparent_70%)] opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100" />
+      <div className="pointer-events-none absolute -right-20 -top-20 h-40 w-40 rounded-full bg-[radial-gradient(circle,rgba(245,115,74,0.2),transparent_70%)] opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100" />
       
       <Link href={href} className="block">
         {/* SOP Letter */}
-        <div className="text-xs font-bold uppercase tracking-[0.15em] text-[#00D1C1]">
+        <div className="text-xs font-bold uppercase tracking-[0.15em] text-[#F5734A]">
           SOP · {letter}
         </div>
         
@@ -48,7 +48,7 @@ export function SOPCard({ letter, tool, title, audience, href }: SOPCardProps) {
           </Link>
           <Link
             href={`${href}/pdf`}
-            className="inline-flex items-center gap-1.5 rounded-lg border border-[rgba(0,209,193,0.35)] bg-[rgba(0,209,193,0.1)] px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#00D1C1] transition-all hover:border-[rgba(0,209,193,0.6)] hover:bg-[rgba(0,209,193,0.18)]"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-[rgba(245,115,74,0.35)] bg-[rgba(245,115,74,0.1)] px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#F5734A] transition-all hover:border-[rgba(245,115,74,0.6)] hover:bg-[rgba(245,115,74,0.18)]"
           >
             <FileText className="h-3.5 w-3.5" />
             PDF

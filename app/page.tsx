@@ -62,7 +62,7 @@ export default function SOPLibraryPage() {
               priority
             />
           </div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#00D1C1]">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#F5734A]">
             CodaGrowth · Revenue Ops Library
           </p>
           <h1 className="mt-4 text-4xl font-black tracking-[-0.025em] text-[#F5F7FA] md:text-[52px] md:leading-[1.08]">

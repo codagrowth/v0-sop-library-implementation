@@ -19,6 +19,9 @@
   --teal-2: #04C3B3;
   --teal-3: #32CEC0;
   --teal-ink: #041612;
+  --orange: #F5734A;
+  --orange-2: #F97316;
+  --orange-ink: #1A0A04;
   --green-accent: #2DFF8F;
   
   /* Shadcn tokens mapped to CodaGrowth */
@@ -88,6 +91,9 @@
   --color-teal-3: var(--teal-3);
   --color-teal-ink: var(--teal-ink);
   --color-green-accent: var(--green-accent);
+  --color-orange: var(--orange);
+  --color-orange-2: var(--orange-2);
+  --color-orange-ink: var(--orange-ink);
 }
 
 @layer base {
