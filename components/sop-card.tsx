@@ -33,12 +33,12 @@ export function SOPCard({ letter, tool, title, audience, href }: SOPCardProps) {
       </Link>
       
       {/* Bottom Row: Audience + Actions */}
-      <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-dashed border-[rgba(255,255,255,0.1)] pt-5">
+      <div className="mt-5 flex flex-col gap-4 border-t border-dashed border-[rgba(255,255,255,0.1)] pt-5">
         <div className="font-[family-name:var(--font-roboto)] text-[11px] font-medium uppercase tracking-[0.12em] text-[#429E93]">
           {audience}
         </div>
         
-        <div className="flex shrink-0 gap-2">
+        <div className="flex gap-2">
           <Link
             href={href}
             className="inline-flex items-center gap-1.5 rounded-lg border border-[rgba(255,255,255,0.14)] bg-[rgba(255,255,255,0.05)] px-3 py-2 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#BFE2DC] transition-all hover:border-[rgba(255,255,255,0.25)] hover:text-white"
