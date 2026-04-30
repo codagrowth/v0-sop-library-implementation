@@ -48,7 +48,7 @@ const sopData = [
 
 export default function SOPLibraryPage() {
   return (
-    <main className="min-h-screen bg-[#000]">
+    <main className="min-h-screen bg-[#132A4A]">
       <div className="mx-auto max-w-[1100px] px-6 py-16 md:px-10 md:py-20">
         {/* Hero Section */}
         <header className="mb-12 text-center md:mb-16">
@@ -62,13 +62,13 @@ export default function SOPLibraryPage() {
               priority
             />
           </div>
-          <p className="font-mono text-[10px] font-medium uppercase tracking-[0.22em] text-[#4FE9D0]">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#00D1C1]">
             CodaGrowth · Revenue Ops Library
           </p>
-          <h1 className="mt-4 font-[family-name:var(--font-space-grotesk)] text-4xl font-bold tracking-tight text-white md:text-[52px] md:leading-[1.02]">
+          <h1 className="mt-4 text-4xl font-black tracking-[-0.025em] text-[#F5F7FA] md:text-[52px] md:leading-[1.08]">
             The 2026 SOP Stack
           </h1>
-          <p className="mx-auto mt-5 max-w-[60ch] text-sm leading-relaxed text-[#9AA6BF] md:text-base">
+          <p className="mx-auto mt-5 max-w-[60ch] font-[family-name:var(--font-roboto)] text-sm leading-relaxed text-[#BFE2DC] md:text-base">
             Six tool-specific Standard Operating Procedures that operationalise
             the Autonomous Revenue Engine. Each document is a standalone,
             print-ready deliverable.

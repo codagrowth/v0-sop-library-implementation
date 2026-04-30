@@ -4,23 +4,22 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* CodaGrowth Design System */
-  --bg: #05070D;
-  --bg-2: #0A0E1A;
-  --panel: #0E1422;
-  --panel-2: #121A2C;
+  /* CodaGrowth.ai Design System - matching live site */
+  --bg: #132A4A;
+  --bg-2: #1E3F62;
+  --bg-3: #0F1F2E;
+  --panel: #1A3D6E;
+  --panel-2: #1A3559;
   --line: rgba(255,255,255,0.08);
   --line-2: rgba(255,255,255,0.14);
-  --text: #EAF0FA;
-  --text-dim: #9AA6BF;
-  --text-mute: #667192;
-  --teal: #4FE9D0;
-  --teal-2: #22C9B1;
+  --text: #F5F7FA;
+  --text-dim: #BFE2DC;
+  --text-mute: #429E93;
+  --teal: #00D1C1;
+  --teal-2: #04C3B3;
+  --teal-3: #32CEC0;
   --teal-ink: #041612;
-  --purple: #9B6BFF;
-  --purple-2: #6A3DFF;
-  --purple-soft: rgba(155,107,255,0.18);
-  --teal-soft: rgba(79,233,208,0.18);
+  --green-accent: #2DFF8F;
   
   /* Shadcn tokens mapped to CodaGrowth */
   --background: var(--bg);
@@ -35,19 +34,19 @@
   --secondary-foreground: var(--text);
   --muted: var(--panel-2);
   --muted-foreground: var(--text-mute);
-  --accent: var(--purple);
-  --accent-foreground: #fff;
+  --accent: var(--teal-2);
+  --accent-foreground: var(--teal-ink);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
   --border: var(--line);
   --input: var(--line-2);
   --ring: var(--teal);
-  --radius: 0.875rem;
+  --radius: 0.625rem;
 }
 
 @theme inline {
-  --font-sans: 'Inter', 'Geist', system-ui, sans-serif;
-  --font-display: 'Space Grotesk', 'Geist', system-ui, sans-serif;
+  --font-sans: var(--font-inter), 'Inter', system-ui, sans-serif;
+  --font-body: var(--font-roboto), 'Roboto', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', 'Geist Mono', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -76,6 +75,7 @@
   /* Custom CodaGrowth colors */
   --color-bg: var(--bg);
   --color-bg-2: var(--bg-2);
+  --color-bg-3: var(--bg-3);
   --color-panel: var(--panel);
   --color-panel-2: var(--panel-2);
   --color-line: var(--line);
@@ -85,11 +85,9 @@
   --color-text-mute: var(--text-mute);
   --color-teal: var(--teal);
   --color-teal-2: var(--teal-2);
+  --color-teal-3: var(--teal-3);
   --color-teal-ink: var(--teal-ink);
-  --color-purple: var(--purple);
-  --color-purple-2: var(--purple-2);
-  --color-purple-soft: var(--purple-soft);
-  --color-teal-soft: var(--teal-soft);
+  --color-green-accent: var(--green-accent);
 }
 
 @layer base {
